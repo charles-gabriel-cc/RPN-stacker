@@ -64,6 +64,6 @@ class Main {
       }
     }
     Integer result = rpn_stack.pop();
-    System.out.println("Saida: "+ result);
+    System.out.println("\nSaida: "+ result);
   }
 }
