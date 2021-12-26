@@ -70,7 +70,11 @@ public class Interpreter implements Expr.Visitor<Integer> {
 
 	@Override
 	public Integer visitIdExpr(Expr.Id expr) {
-		return Integer.parseInt(env.get(expr.value));
+		if (this.env.containsKey(expr.value)) {
+			return Integer.parseInt(this.env.get(expr.value));
+		} else {
+			throw new InterpreterError(expr.value + " cannot be resolved");
+		}
 	}
 
 	private int evaluate(Expr expr) {
