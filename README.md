@@ -1,21 +1,17 @@
-<div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:7c2d12,50:ea580c,100:f59e0b&height=170&section=header&text=RPN%20Stacker&fontSize=46&fontColor=ffffff&animation=fadeIn&fontAlignY=40&desc=Interpretador%20de%20Nota%C3%A7%C3%A3o%20Polonesa%20Reversa%20em%20Java%20(Lexer%2C%20Parser%2C%20AST%20e%20Interpreter)&descAlignY=65&descSize=14" width="100%" alt="Banner" />
-</div>
-
 <p align="center">
-  <img src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white" alt="Java" />
-  <img src="https://img.shields.io/badge/Compiladores-RPN%20%2F%20AST-EA580C?style=for-the-badge" alt="Compiladores" />
+  <img src=".github/banner.svg" alt="RPN Stacker" width="100%" />
 </p>
 
----
+<p align="center">
+  <img src="https://img.shields.io/badge/Java-ED8B00?style=flat-square&logo=openjdk&logoColor=white" alt="Java" />
+  <img src="https://img.shields.io/badge/Compiladores-RPN%20%2F%20AST-EA580C?style=flat-square" alt="Compiladores" />
+</p>
 
-## 📖 Sobre o Projeto
+## Sobre o Projeto
 
 Implementação incremental em **Java** de um avaliador e interpretador de expressões em **Notação Polonesa Reversa (RPN / Postfix)**, desenvolvido para a disciplina de **Compiladores**. O repositório mostra a evolução arquitetural em três etapas — de uma pilha ad-hoc simples até um pipeline completo com análise léxica, árvore sintática abstrata (AST) e interpretador.
 
----
-
-## 🏗️ Evolução das Etapas
+## Evolução das Etapas
 
 | Etapa | Pasta | O que implementa |
 | :---: | :--- | :--- |
@@ -23,9 +19,7 @@ Implementação incremental em **Java** de um avaliador e interpretador de expre
 | **Task 02** | `[Task 02 - RPNStacker ManualSimple Scanning]/` | Separação da etapa de **análise léxica manual** (`Token` e `TokenType`: `NUM`, `PLUS`, `MINUS`, `STAR`, `SLASH`, `EOF`) com tratamento de caracteres inválidos. |
 | **Task 03** | `[Task 03 - RPNStackerPostfix][ID expression]/Postfix/` | Arquitetura modular completa: **Lexer** (`Scanner`, `Regex`, `LexError`), **Parser** (`Parser`, `ParserError`), **AST** (`Expr`, `AstPrinter`, padrão *Visitor* com `Binop`, `Number` e `Id`) e **Interpreter** (`Interpreter`, `InterpreterError`). |
 
----
-
-## 🚀 Como Executar
+## Como Executar
 
 ### Task 01 ou Task 02
 
